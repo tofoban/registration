@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/boostrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/font awesome/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="menu-member">
+        <?php
+          if(isset($_session))
+        ?>
+        <li><a href="#">SIGNIN</a></li>
+        <li><a href="#" class="header-login-a">LOGIN</a></li>
+      </ul>
+    </header>
+      <div class="wrapper">
+            <h3 class="admin">ADMINISTRATOR LOGIN</h3>
+            <section class="login ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-offset-1 ">
+                  <div class="item-image">
+                    <img src="./lock-icon-vector-13820047.png" class="img-fluid" alt="image">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                 
+                  <form action="includes/login.inc.php" method="post">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                        <label for="name">USERNAME</label>
+                        <input type="text" name="uid" placeholder="username" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                      <label for="password">PASSWORD</label>
+                      <input type="password" name="pwd" placeholder="password" class="form-control" />
+                      <p>Don't have account? <a href="signup.html">Sign up here</a>  </p>
+
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">LOGIN</button>
+                    </button>
+                
+                  </form>
+                </div>
+              </div>
+            </div>
+         
+        </section>
+    <div class="footer">
+      
+            <h4> ADMIN LOGIN</h4>
+
+       
+           <h2>BULLCHARGE</h2>
+        
+    </div>
+
+</div>
+  </body>
+</html>
